@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.signin-container {
+    background: #120F1C;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+
+
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+input {
+    background: #2C273F;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ABA2C7;
+    height: 50px;
+    width: 280px;
+    padding: 16px 14px;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    width: 125px;
+    height: 39px;
+    background: #C8F513;
+    box-shadow: 1px 2px 0px #BC8CED;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #120F1C;
+}
