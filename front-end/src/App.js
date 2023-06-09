@@ -1,32 +1,21 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link , Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route , Routes} from 'react-router-dom';
 import Register from "./components/register/Register";
+import Post from "./components/post/Post";
 import Login from "./components/login/Login";
+
+
 
 function App() {
   return (
    <>
-
+  yoo
 <Router>
-
-<nav>
-        <ul>
-          <li>
-          </li>
-          <li>
-            <Link to="/Register">register</Link>
-          </li>
-          <li>
-            <Link to="/Login">login</Link>
-          </li>
-        </ul>
-      </nav>
- 
     <Routes>
     <Route path="/Register" element={<Register />} />
     <Route path="/Login" element={<Login />} />
+    <Route path="/Post" element={<Post />} />
     </Routes>
- 
 </Router>
    </>
 

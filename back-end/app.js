@@ -18,4 +18,4 @@ const port = process.env.PORT
 
 app.listen(port, () => {
     console.log(`port running in ${port}`)
-})
+});
