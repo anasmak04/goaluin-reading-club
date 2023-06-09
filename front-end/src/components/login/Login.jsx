@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-function SignIn() {
+function Login() {
   return (
     <div className="signin-container">
       
@@ -16,4 +16,4 @@ function SignIn() {
   )
 }
 
-export default SignIn
+export default Login
