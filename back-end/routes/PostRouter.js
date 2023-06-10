@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const  {createpost,deletepost} = require("../controller/PostControlller");
+const  {CreatePost,DeletePost} = require("../controller/PostControlller");
 
 
-router.post("/post", createpost);
-router.delete("/post" , deletepost);
+router.post("/post", CreatePost);
+router.delete("/post" , DeletePost);
 
 
 module.exports = router;
