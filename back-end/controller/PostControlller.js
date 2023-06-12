@@ -24,13 +24,6 @@ const GetPost = asyncHandler(async (req, res) => {
 })
 
 const DeletePost = asyncHandler(async (req, res) => {
-
-    const { title, decription } = req.body;
-    if (!title || !decription) {
-        res.status(400)
-        throw new Eroor("please add all fields");
-    }
-
     const deletepost = await Post.findByIdAndRemove(req.params.id);
     if (!deletepost) {
         res.status(400)

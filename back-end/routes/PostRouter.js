@@ -4,7 +4,7 @@ const  {CreatePost,DeletePost,GetPost} = require("../controller/PostControlller"
 
 
 router.post("/post", CreatePost);
-router.delete("/post" , DeletePost);
+router.delete("/post/:id" , DeletePost);
 router.get("/post", GetPost);
 
 

@@ -1,6 +1,7 @@
-
-import axios from 'axios';
 import { useEffect,useState } from 'react';
+import "./Home.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 function Home() {
   const [data, setData] = useState([]);
@@ -15,17 +16,27 @@ useEffect(() => {
 
   getData();
 },[])
+
+  
   
   return (
-    <div>
+    <div className="container">
+   
         {data.map((item) => {
           return (
-            <>
-            {item.title}
-            {item.description}
-            </>
+            <div className="box">
+              <div>
+              <h1 key={item.id}>{item.title}</h1><br />
+            <h2>{item.description}</h2>
+              </div>
+
+              <div>
+              <FontAwesomeIcon  icon={faTrash} className="icon" />
+              </div>
+            </div>
           )
         })}
+     
     </div>
   )
 }
