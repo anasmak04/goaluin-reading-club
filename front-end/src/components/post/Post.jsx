@@ -23,7 +23,7 @@ const handleSubmit = async (e) => {
   e.preventDefault()
   try{
       await axios.post("http://localhost:7000/api/user/post",{title,description})
-        navigate('/Login')
+        navigate('/Home')
     }
   catch(err){
       console.log(err)

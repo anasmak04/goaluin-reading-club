@@ -1,25 +1,45 @@
-.container{
+.container {
     background: #120F1C;
     flex-direction: column;
-    display:flex;
+    display: flex;
 }
 
-.box{
-    width:400px;
-    height :120px;
-    background-color:orange;
-    display:flex;
+.box {
+    width: 592px;
+    height: 128px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    display: flex;
+    margin: 12px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.box-content{
     margin:12px;
-    justify-content:space-between;
-    align-items:start;
+}
+.icon {
+    color: #CF5959;
+    font-size: 22px;
+    margin:12px;
+    cursor:pointer;
 }
 
-.icon{
-    color:red;
-    font-size:22px;
+.icone {
+    color:#656469 ;
+    font-size: 1pxpx;
+
 }
 
-.icone{
+h2,h3{
+    color:#656469;
+}
+
+h1{
     color:white;
-    font-size:22px;
 }
+
+h2{
+    margin-bottom:12px;
+}
+
