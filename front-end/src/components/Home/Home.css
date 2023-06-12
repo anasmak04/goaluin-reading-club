@@ -6,7 +6,7 @@
 
 .box{
     width:400px;
-    height :100px;
+    height :120px;
     background-color:orange;
     display:flex;
     margin:12px;
@@ -16,5 +16,10 @@
 
 .icon{
     color:red;
+    font-size:22px;
+}
+
+.icone{
+    color:white;
     font-size:22px;
 }
