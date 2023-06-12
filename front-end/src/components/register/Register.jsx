@@ -36,7 +36,7 @@ function Register() {
   return (
     <div className="signup-container">
       
-    <p>welcome back</p>
+    <p>welcome to goaluin</p>
 
     <form onSubmit={handleSubmit}>
       <input onChange={handleChange} name="username" value={username} type="text"  placeholder='name'/>

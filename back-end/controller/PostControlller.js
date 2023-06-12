@@ -3,8 +3,10 @@ const Post = require("../models/PostModel");
 
 
 const CreatePost = asyncHandler(async (req, res) => {
-    const { title, decription } = req.body;
-    if (!title || !decription) {
+
+    console.log(req.body)
+    const { title, description} = req.body;
+    if (!title || !description) {
         res.status(400)
         throw new Eroor("please add all fields");
     }
@@ -12,6 +14,13 @@ const CreatePost = asyncHandler(async (req, res) => {
     const createpost = await Post.create({ title, description });
 
     res.status(200).json(createpost);
+});
+
+
+const GetPost = asyncHandler(async (req, res) => {
+    const getpost = await Post.find();
+    res.status(200).json(getpost);
+
 })
 
 const DeletePost = asyncHandler(async (req, res) => {
@@ -34,4 +43,4 @@ const DeletePost = asyncHandler(async (req, res) => {
 })
 
 
-module.exports = { CreatePost, DeletePost };
+module.exports = { CreatePost, DeletePost,GetPost };

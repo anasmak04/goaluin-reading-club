@@ -11,6 +11,7 @@ connectDb();
 app.use(express.json());
 
 app.use("/api/user", require("./routes/UserRouter"));
+app.use("/api/user", require("./routes/PostRouter"));
 
 app.use(ErrorHandler);
 
