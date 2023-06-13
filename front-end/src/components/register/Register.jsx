@@ -24,7 +24,7 @@ function Register() {
     try{
         await axios.post("http://localhost:7000/api/user/register",{username,email,password},
           {headers : {'Content-Type': 'application/json',
-          'Authorization': 'JWT fefege...'}}        
+          'Authorization': 'JWT auth'}}        
         )
           navigate('/Login')
       }

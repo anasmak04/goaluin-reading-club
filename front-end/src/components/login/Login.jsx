@@ -28,7 +28,7 @@ function Login() {
       )
       localStorage.setItem("token", res.data.accessToken)
       console.log(localStorage.getItem("token"))
-      navigate("/Post");
+      navigate("/Home");
     }
     catch (err) {
       console.log(err);
